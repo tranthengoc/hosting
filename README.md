@@ -1,1 +1,1 @@
-# css, js, images
+# css, js, images, fonts
