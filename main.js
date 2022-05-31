@@ -1,5 +1,5 @@
-/* global.js */
 window.onload = function() {
+appfloat();
 darkmode_head();
 darkmode();
 avatar();
@@ -390,4 +390,14 @@ function gototop() {
      $("html, body").animate({ scrollTop: 0 }, "slow");
      return false;
   });
+}
+function appfloat() {
+var configMain = {elementFAB: document.querySelector("#app-float")};
+window.addEventListener("scroll", function() {
+        if (configMain.elementFAB && window.pageYOffset >= 150) {
+            configMain.elementFAB.classList.add("visible")
+        } else {
+            configMain.elementFAB.classList.remove("visible")
+        };
+    });
 }
