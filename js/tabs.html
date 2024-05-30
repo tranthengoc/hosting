@@ -1,0 +1,37 @@
+<html>
+  <style>
+.s-p-tab-title{display:flex;margin-bottom:30px;border-bottom:1px solid var(--border);font-size:90%;line-height:1.6;overflow-x:scroll;overflow-y:hidden;scroll-behavior:smooth;scroll-snap-type:x mandatory;-ms-overflow-style:none;-webkit-overflow-scrolling:touch}
+.s-p-tab-title >*{position:relative;padding:12px 15px;transition:opacity .1s ease;opacity:.6;white-space:nowrap;scroll-snap-align:start}
+.s-p-tab-title >::before{content:attr(data-text);text-transform:capitalize}
+.s-p-tab-title >::after{content:'';position:absolute;left:0;bottom:-1px;right:0;height:2px;border-radius:2px 2px 0 0;background-color:var(--key);opacity:0;transition:opacity .1s ease,visibility .1s ease}
+.s-p-tab-content >*{display:none;width:100%}
+.s-p-tab-content >* div:first-child{margin-top:0}
+.s-single input[id*="1"]:checked ~ .s-p-tab-title label[for*="1"],.s-single input[id*="2"]:checked ~ .s-p-tab-title label[for*="2"],.s-single input[id*="3"]:checked ~ .s-p-tab-title label[for*="3"],.s-single input[id*="4"]:checked ~ .s-p-tab-title label[for*="4"]{color:var(--key);opacity:1;font-weight:500}
+.s-single input[id*="1"]:checked ~ .s-p-tab-title label[for*="1"]::after,.s-single input[id*="2"]:checked ~ .s-p-tab-title label[for*="2"]::after,.s-single input[id*="3"]:checked ~ .s-p-tab-title label[for*="3"]::after,.s-single input[id*="4"]:checked ~ .s-p-tab-title label[for*="4"]::after{opacity:1}
+.s-single input[id*="1"]:checked ~ .s-p-tab-content div[class*="Text-1"],.s-single input[id*="2"]:checked ~ .s-p-tab-content div[class*="Text-2"],.s-single input[id*="3"]:checked ~ .s-p-tab-content div[class*="Text-3"],.s-single input[id*="4"]:checked ~ .s-p-tab-content div[class*="Text-4"]{display:block}
+.s-p-scroll-hidden::-webkit-scrollbar{width:0;height:0}
+.s-p-scroll-hidden::-webkit-scrollbar-track{background-color:transparent}
+.s-p-scroll-hidden::-webkit-scrollbar-thumb{background-color:transparent;border:none}
+  </style>
+<body>
+    <!--[ Active function ]--> 
+    <input checked='' class='tbIn hidden' id='fTabs-1' name='postTabs' type='radio'/>
+    <input class='tbIn hidden' id='fTabs-2' name='postTabs' type='radio'/>
+    <!--[ Tabs header/title, replace class attribute to class='s-p-tab-title s-p-scroll-hidden stick' if you want to create a floating tab title ]-->
+    <div class='s-p-tab-title s-p-scroll-hidden'>
+    <!--[ Change atribute data-text='...' to replace tabs title ]-->
+    <label expr:data-text='data:messages.labels' for='fTabs-1'/>
+    <label expr:data-text='data:messages.at' for='fTabs-2'/>
+    </div>
+    <div class='s-p-tab-content'>
+    <!--[ Tabs content ]-->
+    <div class='tbText-1'>
+    sss
+    </div>
+    <!--[ Tabs content ]-->
+    <div class='tbText-2'>
+    sss
+    </div>
+    </div>
+</body>
+</html>
