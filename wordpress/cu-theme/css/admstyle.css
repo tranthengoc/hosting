@@ -1,0 +1,75 @@
+body,textarea{font-size:14px;font-family:"Microsoft Yahei",宋体,PMingLiU,Verdana,Arial,Helvetica,sans-serif !important;}
+input{font-size:14px;font-family:Tahoma,Arial,sans-serif !important;}
+body{background:#e3eaf4 url("http://7xo8ag.com1.z0.glb.clouddn.com/adminbg.jpg") fixed center bottom no-repeat !important;}
+#login {
+width:320px;
+background:rgba(0, 0, 0, 0.02);
+padding:0 20px 100% 12px;
+margin:auto;
+top:0px;
+right:15%;
+position:fixed;
+}
+.login form {
+margin-left:8px;
+padding:26px 24px 46px;
+font-weight:normal;
+background:rgba(255, 255, 255, 0.2);
+border:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+box-shadow: #000 0 0px 0px -1px;}
+#loginform {-webkit-border-radius:0px;border-radius:0px;margin-top: 150px;}
+.login form .input, .login input[type="text"] {
+color:#555;
+font-weight:200;
+font-size:24px;
+line-height:1;
+width:100%;
+padding:5px;
+margin-top:2px;
+margin-right:6px;
+margin-bottom:16px;
+border:1px solid #FFF;
+background:#FFF !important;
+outline:0;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+box-shadow:none;
+}
+.login form .input, .login input[type="text"] {
+font-size:17px;
+padding-bottom:11px;
+padding-top:11px;
+text-indent:3px; }
+.login form .input, .login input[type="text"] {border:2px solid #DCE4EC;}
+input.button-primary{
+margin-top:8px;
+border:#000;
+font-weight:bold;
+text-shadow:#FFF 0 0px 10px;}
+.login .button-primary {
+font-size:14px!important;
+line-height:22px;
+padding:8px 117px;
+border-radius:0px;
+}
+input.button-primary {
+    background:rgba(255, 255, 255, 0.5);color:#000; }
+input.button-primary:hover,input.button-primary:focus {
+      background:rgba(255, 255, 255, 0.8);color:#000; }
+input.button-primary:active{
+      background:rgba(255, 255, 255, 0.2);color:#000; }
+.login form .forgetmenot {
+font-weight:normal;
+float:none;
+margin-top:-10px;
+}
+.login #nav, .login #backtoblog {text-shadow:none;float:right;margin:0 30px 0 0px;padding:16px 0px 0 20px;}
+.login #nav  a, .login #backtoblog  a{color:#FFF!important;text-decoration:none;}
+.login #nav  a:hover, .login #backtoblog  a:hover{color:#444!important;text-decoration:none;}
+div.error, .login #login_error {display:none;}
+div.updated, .login .message {background-color: #E0FFE1;border-color: #ACE655;}
+#login h1{
+    display: none;
+}
